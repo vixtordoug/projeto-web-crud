@@ -1,9 +1,9 @@
 <?php
 
-/* $cliente  = $_POST['cliente'];
+$cliente  = $_POST['cliente'];
 $bairro   = $_POST['bairro'];
 $endereco = $_POST['endereco'];
-$pedido   = $_POST['pedido']; */
+$pedido   = $_POST['pedido'];
 
 
 //Página de Conexão com database
@@ -27,7 +27,7 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO pedidos (cliente, bairro, endereco, pedido)
-  VALUES ('Victor', 'Vila Santo Antonio', 'Av. Paulo Maurício', 'Pizza de Frango')";
+  VALUES ('$cliente', '$bairro', '$endereco', '$pedido')";
   // use exec() because no results are returned
   $conn->exec($sql);
   echo "Pedido cadastrado com sucesso!";
