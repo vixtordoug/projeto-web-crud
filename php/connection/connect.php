@@ -2,18 +2,18 @@
 //Página de Conexão com database
 //Dados de conexão local
 
-$servername = "localhost";
+/* $servername = "localhost";
 $username   = "root";
 $password   = "";
-$dbname     = "projetowebcrud";
+$dbname     = "projetowebcrud"; */
 
 
 //Dados de conexão InfinityFree
 
-/* $servername = "sql204.epizy.com";
+$servername = "sql204.epizy.com";
 $username   = "epiz_28957921";
 $password   = "PnAs40eYsR";
-$dbname     = "epiz_28957921_projetowebcrud"; */
+$dbname     = "epiz_28957921_projetowebcrud";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
