@@ -19,7 +19,8 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="https://kfsoft.info/img/logo2.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="https://kfsoft.info/img/logo2.png" alt="" width="30" height="30"
+                    class="d-inline-block align-text-top">
                 Kariri Food
             </a>
         </div>
@@ -28,25 +29,54 @@
 
     <main class="container">
 
-        <!-- Create Pedido -->
-        <a class="btn btn-primary" href="create.html" role="button">Realizar Pedido</a>
-        <br><br>
+        <h4>Delete um pedido</h4>
 
-        <!-- Delete Pedido -->
-        <a class="btn btn-primary" href="delete.html" role="button">Deletar Pedido</a>
         <br><br>
+        <main class="container">
 
-        <!-- Update Pedido -->
-        <a class="btn btn-primary" href="update.html" role="button">Alterar Pedido</a>
-        <br><br>
 
-        <!-- Read Pedido -->
-        <a class="btn btn-primary" href="php/crud/read.php" role="button">Vizualizar Pedidos</a>
-        <br><br>
+            <br><br>
 
+
+            <form name="form_update" action="php/crud/delete.php" method="POST">
+                <!-- Primeira linha -->
+                <div class="row">
+
+                    <!-- Campo Id -->
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="id" class="form-label">Id</label>
+                            <input type="text" name="id" class="form-control" id="id">
+                        </div>
+                    </div>
+
+                    <!-- Botão delete -->
+                    <button type="submit" class="btn btn-primary">Deletar Pedido</button>
+                </div>
+                <br>
+
+
+
+                <main class="container">
+
+
+
+                    <!-- Create Pedido -->
+                    <a class="btn btn-secondary" href="create.html" role="button">Realizar Pedido</a>
+                    <br><br>
+
+                    <!-- Atualize Pedido -->
+                    <a class="btn btn-secondary" href="update.html" role="button">Atualizar Pedido</a>
+                    <br><br>
+
+                    <!-- Read Pedido -->
+                    <a class="btn btn-secondary" href="php/crud/read.php" role="button">Vizualizar Pedidos</a>
+                    <br><br>
+
+                </main>
+            </form>
+        </main>
     </main>
-   
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
