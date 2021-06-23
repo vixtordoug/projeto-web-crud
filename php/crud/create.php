@@ -48,17 +48,17 @@
         //Página de Conexão com database
         //Dados de conexão local
 
-        $servername = "localhost";
+        /*         $servername = "localhost";
         $username   = "root";
         $password   = "";
-        $dbname     = "projetowebcrud";
+        $dbname     = "projetowebcrud"; */
 
 
         //Dados de conexão InfinityFree
-        /* $servername = "sql204.epizy.com";
-$username   = "epiz_28957921";
-$password   = "PnAs40eYsR";
-$dbname     = "epiz_28957921_projetowebcrud"; */
+        $servername = "sql204.epizy.com";
+        $username   = "epiz_28957921";
+        $password   = "PnAs40eYsR";
+        $dbname     = "epiz_28957921_projetowebcrud";
 
 
         try {
